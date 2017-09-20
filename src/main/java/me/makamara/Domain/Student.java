@@ -14,15 +14,17 @@ public class Student {
 
 	private String firstName;
 	private String lastName;
+	private Long regNo;
 
 	public Student(){
 
 	}
 
-	public Student (String firstName, String lastName){
+	public Student (String firstName, String lastName, Long regNo){
 		this.id =id;
 		this.firstName =firstName;
 		this.lastName =lastName;
+		this.regNo = regNo;
 	}
 
 	public String getFirstName() {
@@ -31,6 +33,10 @@ public class Student {
 
 	public String getLastName() {
 		return lastName;
+	}
+
+	public Long getRegNo() {
+		return regNo;
 	}
 
 	public Long getId(){
@@ -44,5 +50,9 @@ public class Student {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public void setRegNo(Long regNo) {
+		this.regNo= regNo;
 	}
 }
